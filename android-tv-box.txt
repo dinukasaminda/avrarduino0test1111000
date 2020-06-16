@@ -10,7 +10,10 @@ chmod 777 ./busybox
 ./busybox gzip -d /mnt/media_rw/4280-17E9/local.tar.gz and wait a while
 ./busybox tar -xvf /mnt/media_rw/4280-17E9/local.tar
 
+su
 copy local.tar.gz to /dev/vapps folder
+run chmod 777 /dev/vapps
+change  user
 and run chmod,busybox commands
 
 create uploader.sh file
