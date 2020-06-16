@@ -1,1 +1,1 @@
-curl  curl https://downloads.arduino.cc/PR/arduino-cli/arduino-cli-150-PR304-linuxarm.tar.bz2 --output ./arduino-cli-150-PR304-linuxarm.tar.bz2
+curl https://downloads.arduino.cc/PR/arduino-cli/arduino-cli-150-PR304-linuxarm.tar.bz2 --output ./arduino-cli-150-PR304-linuxarm.tar.bz2
