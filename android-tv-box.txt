@@ -1,0 +1,33 @@
+cd ~
+cd mnt
+cd media_rw
+cd 4280-17E9
+
+cd  /mnt/media_rw/4280-17E9/
+cd  /data/data/jackpal.androidterm
+cat /mnt/media_rw/4280-17E9/busybox > busybox
+chmod 777 ./busybox
+./busybox gzip -d /mnt/media_rw/4280-17E9/local.tar.gz and wait a while
+./busybox tar -xvf /mnt/media_rw/4280-17E9/local.tar
+
+copy local.tar.gz to /dev/vapps folder
+and run chmod,busybox commands
+
+create uploader.sh file
+nano uploader.sh
+
+echo "starting uploader script"
+
+#hex file path                  serial-read-write.ino.eightanaloginputs.hex
+#hex file with bootloader path: serial-read-write.ino.with_bootloader.eightanaloginputs.hex
+# version of arduino nano  ATmega328P old bootloader
+#win commands
+#WIN folder config D:\apps\Arduino\hardware\tools\avr\etc
+# -CD:\apps\Arduino\hardware\tools\avr/etc/avrdude.conf -v -patmega328p -carduino -PCOM4 -b57600 -D -Uflash:w:C:\Users\DINUKA~1\AppData\Local\Temp\arduino_build_700637/serial-read-write.ino.hex:i 
+/dev/vapps/local/bin/avrdude -v ATmega328P old bootloader
+
+
+
+git clone https://github.com/dinukasaminda/avrarduino0test1111000.git
+
+git clone git://github.com/dinukasaminda/avrarduino0test1111000.git
